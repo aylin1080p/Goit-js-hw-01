@@ -6,7 +6,7 @@ function makeTransaction(quantity, pricePerDroid) {
 }
 
 
-function runHomework() {
+function runHomework1() {
 
     console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
     console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"

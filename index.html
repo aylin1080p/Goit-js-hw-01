@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS Homework 01</title>
+    <title>JS Homeworks</title>
 
     <style>
       body {
         margin: 0;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,29 +16,30 @@
         font-family: Arial, sans-serif;
       }
 
+      .container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
       .card {
-        background: #ffffff;
-        padding: 40px;
+        background: white;
+        padding: 30px;
         border-radius: 12px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
         text-align: center;
-        width: 300px;
-      }
-
-      h1 {
-        margin-bottom: 20px;
-        font-size: 22px;
-        color: #333;
+        width: 260px;
       }
 
       button {
-        padding: 10px 20px;
+        padding: 8px 18px;
         border: none;
         border-radius: 8px;
         background: #4f46e5;
         color: white;
         cursor: pointer;
-        transition: 0.2s ease;
+        margin-top: 10px;
       }
 
       button:hover {
@@ -46,19 +47,34 @@
       }
 
       .output {
-        margin-top: 20px;
+        margin-top: 15px;
         font-weight: bold;
-        color: #111;
       }
     </style>
   </head>
   <body>
-    <div class="card">
-      <h1>js-homework-01</h1>
-      <button onclick="runHomework()">Run</button>
-      <div class="output" id="output"></div>
+    <div class="container">
+      <div class="card">
+        <h2>js-homework-01</h2>
+        <button onclick="runHomework1()">Run</button>
+        <p class="output" id="output1"></p>
+      </div>
+
+      <div class="card">
+        <h2>js-homework-02</h2>
+        <button onclick="runHomework2()">Run</button>
+        <p class="output" id="output2"></p>
+      </div>
+
+      <div class="card">
+        <h2>js-homework-03</h2>
+        <button onclick="runHomework3()">Run</button>
+        <p class="output" id="output3"></p>
+      </div>
     </div>
 
     <script src="./js/task-1.js"></script>
+    <script src="./js/task-2.js"></script>
+    <script src="./js/task-3.js"></script>
   </body>
 </html>
